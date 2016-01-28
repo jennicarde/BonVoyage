@@ -1,0 +1,161 @@
+/* iPads (Tablets) ----------- */
+@media only screen and (min-width: 768px) and (max-width : 1024px) {
+/* Styles */
+
+.desktop_only {
+	display: none;
+}
+
+.padding-right {
+	padding-right: 0;
+}
+
+.container {
+	background: #fff;
+}
+
+nav ul {
+	/*display: block will force the ul to strech across full width of parent element (nav)*/
+	display: block;
+	clear: both;
+	width: 100%;
+	}
+
+nav ul li {
+	border-bottom: none;
+	/* using % will allow to calculate a equal for each list item relative to the parent element (ul)*/
+}
+	nav ul a {
+	padding-right: 10%;
+	font-size: 1rem;
+	display: block;
+	text-align: center;
+	}
+
+
+#back {
+	color: #097068;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#media {
+	width: 80%;
+	margin: 20px auto;
+}
+
+section#main, aside {
+	border-right: none;
+	float: none;
+	width: auto;
+	padding: 10px 40px;
+	margin: 10px 20px;
+}
+
+aside {
+	border: 1px solid #097068;
+}
+
+	aside h3 {
+	 color:#097068;
+	}
+
+#video {
+	width: 60%;
+	margin: 20px auto;
+}
+
+footer {
+	position: relative;
+}
+
+
+.hidden_sm {
+	display: block;
+}
+
+.visible_sm {
+	display: none;
+}
+
+
+}
+
+
+
+/* Iphone/Android (Small Devices) ----------- */
+@media only screen and (min-width : 320px) and (max-width: 767px) {
+/* Styles */
+
+header h1 {
+	text-align: center;
+	}
+
+nav {
+	width: 100%;
+}
+
+	nav ul {
+		margin: 0;
+		padding: 0;	
+		clear:both;
+		/*display: block will force the ul to strech across full width of parent element (nav)*/
+		display: block;
+		/*float: right;*/
+		}
+
+	nav ul li {
+		padding: 10px 1.5%;
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		display: block;
+	}
+
+		nav ul a {
+		padding-right: 10%;
+		font-size: 1.2rem;
+		text-align: right;
+		}
+
+section#main, aside {
+	float: none;
+	border-right: none;
+	width: auto;
+	padding: 10px 40px;
+	margin: 10px 20px;
+}
+
+aside {
+	border: 1px solid #097068;
+	text-align: center;
+}
+
+#text a {
+	text-decoration: none;
+	color: #fff;
+	background: #097068;
+	border: 2px solid #097068;
+	padding: 20px 0;
+	text-align: center;
+	display: block;
+}
+	#text a:hover {
+	background: none;
+	color: #097068;
+	border: 2px solid #097068;
+}
+
+footer {
+	position: relative;
+}
+.hidden_sm {
+	display: none;
+}
+
+.visible_sm {
+	display: block;
+}
+
+
+
+}

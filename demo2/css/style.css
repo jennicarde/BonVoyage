@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre, h1,h2,h3,h4,h5,h6, p,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*=======================================*/
+
+/* Author: Sandy - sandyludosky.github.io
+	 Date: 2014/09/15
+	 colors from adobe kuler:https://kuler.adobe.com/fr/Vintage-space-expedition-color-theme-4281456/
+   - Learn to code a sleek website with HTML & CSS - 
+*/
+
+
+
+
+h1,h2,h3,h4,h5,h6 {
+	color: #8B292C;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.container {
+	width: 100%;
+	background: #fff;
+}
+
+header {
+	background: #097068;
+	color: #ecf0f1;
+	padding: 20px;
+}
+
+	header h1 {
+	 font-size: 48px;
+	 text-align: right;
+	 margin: 0;
+	 color: #FFF;
+	}
+
+
+nav {
+	float: right;
+	width: 100%;
+	border: 1px solid #097068;
+}
+
+	nav ul {
+		margin: 0;
+		padding: 0;	
+		clear:both;
+		display: inline-block;
+		float: right;
+		}
+
+	nav ul li {
+		padding: 10px 30px;
+		width: 5rem;
+		font-size: 18px;
+		list-style-type: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+		margin-left: -4px;
+	}
+
+		nav li:hover  {
+		 background: #097068;
+		}
+
+		nav li:hover a {
+		 color:#fff;
+		}
+
+
+	nav li a  {
+		color: #097068;
+		text-decoration: none;
+
+	}
+
+		
+section#main {
+	float: left;
+	width: 55%;
+	padding: 10px 40px;
+	/*border-left: 1px solid #333;
+	margin: 4% 4% 4% 0;*/
+	border-right: 1px solid #333;
+	margin: 4% 0 4% 4%;
+
+ 	
+}
+
+	section#main h2 { 
+		margin: 0; 
+		font-size: 24px;
+	}
+
+aside {
+	width: 26%;
+	padding: 40px 30px;
+	margin: 0 3% 0 3;
+	/*float: left;*/
+	float: right;
+}
+
+	aside h3 { 
+		margin: 0; 
+		font-size: 18px;
+	}
+
+#video {
+	margin-right: 30px;
+}
+
+footer {
+	background:#097068;
+	position: absolute;
+	color: #ecf0f1;
+	text-align: right;
+	padding: 10px;
+	width: 100%;
+	bottom: 0;
+}
+
+/* in CSS, the last element overrides earlier elements, 
+so the text-align center here overrides the footer 
+text-align right*/
+.text-center {
+	text-align: center;
+}
+
+.padding-right {
+	padding-right: 70px;
+}
+
+.clearfix {
+	clear: left;
+}
+
+.mobile_only {
+	display: none;
+}
+
+.hidden_sm {
+	display: block;
+}
+
+.visible_sm {
+	display: none;
+}
+
+/* iPads (Tablets) ----------- */
+@media only screen and (min-width: 768px) and (max-width : 1024px) {
+/* Styles */
+
+}
+
+ /* Iphone/Android (Small Devices) ----------- */
+ @media only screen and (min-width : 320px) and (max-width: 767px) {
+/* Styles */ 
+
+}
+

@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre, h1,h2,h3,h4,h5,h6, p
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*=======================================*/
+
+/* Author: Sandy - sandyludosky.github.io
+	 Date: 2014/09/15
+
+   - Learn to code a sleek website with HTML & CSS - 
+*/
+
+
+
+h1,h2,h3,h4,h5,h6 {
+	color: #3498db;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+
+}
+
+/* header section */
+header {
+	background: #3498db;
+	padding: 20px;
+}
+
+	header h1 {
+		color: #ecf0f1;
+		font-size: 48px;
+	}
+
+/* nav section */
+nav {
+	background: #1abc9c;
+}
+
+	nav ul {
+		/*float: right;*/
+
+		}
+
+	nav ul li {
+		font-size: 18px;
+		padding: 10px 30px;
+		width: 8rem;
+		display: inline-block;
+		margin-right: 20px; 
+		margin-left:-23px;
+		border-left: 1px solid #fff;
+	}
+	
+		nav ul li:first-child {
+			border-left: none;
+		}
+
+		nav li:hover {
+			background: #16a085;
+		}
+
+	nav li a  {
+		color:#fff;
+		text-decoration:none;
+	}
+
+#content-container {
+	padding: 40px 10px;
+}
+
+section#main {
+	width:55%;
+	float: left;
+	padding: 0 40px; 
+	/*border-left: 1px solid #333;*/
+	border-right: 1px solid #333;
+	margin: 10px 0;
+	/*margin: 4% 0 4% 4%;*/
+
+ 	
+}
+
+	section#main h2 {	 }
+
+aside {
+	width: 30%;
+	padding: 0 30px;
+	float: right;
+}
+
+	aside h3 {}
+
+footer {
+	color: #fff;
+	background: #3498db;
+	padding: 10px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.clearfix {
+	clear: both;
+}
+
+@media only screen and (min-width : 768px) and (orientation : landscape) {
+/*Style -- NOTE:can disable parts of the display.website e.g. desktop only at a breakpoint*/
+}
+
+/* iPads (Tablets) ----------- */
+@media only screen and (min-width: 768px) and (max-width : 1024px){
+
+nav ul {
+	display: block;
+	}
+
+nav ul li {
+	padding: 10px 0;
+	width: 18%;
+}
+
+	nav ul li:first-child {
+		border-left: none;
+	}
+	
+section#main {
+	border:none;
+}
+/*disables float*/	
+section#main, aside {
+	border-left: none;
+	width: auto;
+	padding: 10px 40px;
+	margin: 10px 20px;
+}
+
+aside {
+	background: #ecf0f1;
+}
+
+footer {
+	position: relative;
+}
+
+}
+
+/*for small devices (landscape & portrait) */
+@media only screen and (min-width : 320px) and (max-width: 767px) {
+
+.desktop-only {
+	display:none;
+}
+
+header h1 {
+	text-align: center;
+}
+
+nav {
+	width: 100%;
+	background: #95a5a6;
+}
+
+	nav ul {
+		margin: 0;
+		padding: 0;	
+		clear:both;
+		display: block;
+		}
+
+	nav ul li {
+		padding: 10px 1.5%;
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		font-size: 20px;
+		display: block;
+	}
+	
+section#main {
+	border-right: none;
+}
+
+/* disables float*/
+section#main, aside {
+	float: none;
+	border-left: none;
+	width: auto;
+	padding: 10px 40px;
+	margin: 10px 20px;
+}
+
+footer {
+	position: relative;
+}
+
+}
